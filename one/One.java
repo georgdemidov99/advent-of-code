@@ -1,3 +1,5 @@
+package one;
+
 import java.io.IOException;
 import java.nio.file.Files;
 import java.nio.file.Path;
@@ -19,7 +21,7 @@ public class One {
     }
 
     private static TwoLists sortLists() throws IOException {
-        List<String> lines = Files.readAllLines(Path.of("1.txt"));
+        List<String> lines = Files.readAllLines(Path.of("one/1.txt"));
         List<Integer> list1 = new ArrayList<>();
         List<Integer> list2 = new ArrayList<>();
         for (String line : lines) {
